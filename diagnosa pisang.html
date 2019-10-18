@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jenis Penyakit</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hehe.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  background-color: lavender;
+}
+.header {
+  color: white;
+  text-align: center;
+  background-color: black; 
+  border: 0px;
+  border-radius: 0px;
+  opacity: 0.9;
+  padding: 50px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+a.active {background-color: #4CAF50;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+div {
+  border: 13px none;
+  font-family: Trebuchet MS;
+  background-color: #E6E6FA;
+}
+input[type=text],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+  width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  a{color: white;
+  }
+  @media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
+
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Halaman Awal.html" class="bar-item button psadding-large">HOME</a>
+    <a href="diagnosa cabai.html" class="bar-item button padding-large hide-small">DIAGNOSA</a>
+    <a href="jenis penyakit.html" class="bar-item button padding-large hide-small">JENIS PENYAKIT</a>
+
+    <div class="dropdown-hover hide-small">
+      <button class="padding-large button" title="More">LAINNYA <i class="fa fa-caret-down"></i></button>     
+      <div class="dropdown-content bar-block card-4">
+        <a href="ABOUT US.html" class="bar-item button">LAYANAN</a>
+        <a href="ABOUT US.html" class="bar-item button">HUBUNGI KAMI</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header">
+  <h1>HaloTANI.</h1>
+  <hr><h2>Diagnosa Penyakit pada Tanaman</h2>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Pilih Tanaman</button>
+  <div class="dropdown-content">
+  <a href="diagnosa jagung.html">Jagung</a>
+  <a href="diagnosa pisang.html" class="active">Pisang</a>
+  <a href="diagnosa cabai.html">Cabai</a>
+  <a href="diagnosa padi.html">Padi</a>
+  </div>
+</div>
+<br>
+      <label for="Pilih">&nbsp;&nbsp;&nbsp;1. Apakah warna pada daun pisang berubah menguning?</label>
+      <select id="Pilih" name="Pilih">
+        <option value="Iya">Iya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+      <label for="Pilih">&nbsp;&nbsp;&nbsp;2. Apakah pelepah mudah layu?</label>
+      <select id="Pilih" name="Pilih">
+        <option value="Iya">Iya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+      <label for="Pilih">&nbsp;&nbsp;&nbsp;3. Apakah warna bonggol pisang berubah?</label>
+       <select id="Pilih" name="Pilih">
+        <option value="Iya">Iya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+      <label for="Pilih">&nbsp;&nbsp;&nbsp;4. Apakah akar mudah membusuk?</label>
+      <select id="Pilih" name="Pilih">
+        <option value="Iya">Iya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+      <label for="Pilih">&nbsp;&nbsp;&nbsp;5. Apakah lingkungan disekitar tanaman pisang terlalu lembab dan di penuhi gulma?</label>
+      <select id="Pilih" name="Pilih">
+        <option value="Iya">Iya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+      <br>
+      <a href="jawaban pisang.html"><input type="submit" value="Kirim" ></a>
+    </div>
+</body>
+</html>
+
+  
