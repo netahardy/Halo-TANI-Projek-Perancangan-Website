@@ -4,12 +4,12 @@
 <title>Jenis Penyakit</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="hehe.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   margin: 0;
   background-image: url("Apa-Itu-Pertanian.jpg");
+  background-repeat: no-repeat;
+  font-family: Trebuchet MS;
 }
 .header {
   color: white;
@@ -18,7 +18,7 @@ body {
   border: 0px;
   border-radius: 0px;
   opacity: 0.9;
-  padding: 50px;
+  padding: 25px;
 }
 div {
   border: 3px none;
@@ -37,6 +37,34 @@ div {
 a{
 	text-decoration: none;
 	color: yellow;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 .center {
   text-align: center;
@@ -75,39 +103,32 @@ a{
 </style>
 </head>
 <body>
-<div class="top">
-  <div class="bar black card">
-    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="Halaman Awal.html" class="bar-item button psadding-large">HOME</a>
-    <a href="diagnosa cabai.html" class="bar-item button padding-large hide-small">DIAGNOSA</a>
-    <a href="jenis penyakit.html" class="bar-item button padding-large hide-small">JENIS PENYAKIT</a>
 
-    <div class="dropdown-hover hide-small">
-      <button class="padding-large button" title="More">LAINNYA <i class="fa fa-caret-down"></i></button>     
-      <div class="dropdown-content bar-block card-4">
-        <a href="ABOUT US.html" class="bar-item button">LAYANAN</a>
-        <a href="ABOUT US.html" class="bar-item button">HUBUNGI KAMI</a>
-      </div>
-    </div>
-  </div>
-</div>
+<ul class="topnav">
+  <li><a href="Halaman Awal.html">Home</a></li>
+  <li><a href="diagnosa jagung.html">Diagnosa</a></li>
+  <li><a class="active" href="Jenis Penyakit.html">Jenis Penyakit</a></li>
+  <li><a href="Hama.html">Hama Tanaman</a></li>
+  <li class="right"><a href="Tentang halotani.html">Tentang Kami</a></li>
+</ul>
+
 <div class="header">
   <h1>HaloTANI.</h1>
   <hr><h2>Jenis jenis Penyakit Tanaman</h2>
 </div>
-<div class="clearfix">
+<div class="container content padding-64" style="max-width:800px">
   <h2>Penyakit Hawar Daun Bakteri</h2>
   Penyakit hawar daun ini merupakan bakteri yang tersebar luas dan dapat menurunkan hasil panen yang cukup signifikan. Penyakit ini menyerang saat kondisi musim hujan atau musim kemarau yang basah, terutama pada lahan sawah yang selalu tergenang dan kandungan pupuk N tinggi. Penyakit ini disebabkan bakteri Xanthomonas campestris pv oryzae.
 </div>
-<div class="clearfix">
+<div class="container content padding-64" style="max-width:800px">
   <h2>Penyakit layu fusarium</h2>
   Layu fusarium adalah salah satu jenis penyakit yang umum menyerang tanaman budidaya. Serangan penyakit fusarium ini dapat dikategorikan sebagai serangan penyakit yang berbahaya, karena dapat menyebabkan kerugian yang cukup besar bagi para petani. Layu Fusarium (Fusarium wilt) disebabkan oleh jamur Fusarium oxysporum. Jenis jamur ini adalah jenis jamur yang patogen/merugikan bagi tanaman budidaya.Jenis penyakit ini sering menyerang tumbuhan tembakau, penyakit ini disebabkan karena adanya virus TMV yang membuat daun tembakau menjadi kuning. Adolf Meyer (1883) menunjukkan pertama kali bahwa gejala mosaik ini dapat menular, seperti penyakit bakteri.
 </div>
-<div class="clearfix">
+<div class="container content padding-64" style="max-width:800px">
   <h2>Penyakit bercak daun</h2>
   Penyakit bercak daun disebabkan oleh cendawan Cercospora capsici, pada daun yang terserang terdapat bintik-bintik bulat dan berwarna hitam kecoklatan. Lama kelamaan daun menguning dan akhirnya rontok.
 </div>
-<div class="clearfix">
+<div class="container content padding-64" style="max-width:800px">
   <h2>Penyakit bulai</h2>
   Penyakit bulai merupakan penyakit utama pada tanaman jagung yang disebabkan oleh jamur Peronosclerospora Maydis. Perkembangan penyakit ini dimulai dengan infeksi konidia (spora jamur) yang jatuh di permukaan daun jagung.
 
@@ -116,8 +137,8 @@ a{
 <div class="center">
 	<div class="pagination">
   <a href="#">&laquo;</a>
-  <a href="Jenis Penyakit.html">1</a>
-  <a href="Jenis Penyakit2.html" class="active">2</a>
+  <a href="Jenis Penyakit.html" class="active">1</a>
+  <a href="Jenis Penyakit2.html">2</a>
   <a href="#">&raquo;</a>
 </div>
 </body>

@@ -8,6 +8,7 @@
 	body{
 	background-image: url("58059.jpg");
 	opacity: 0.8;
+	background-repeat: no-repeat;
 	}
 	h4{
 	text-align: center;
@@ -53,22 +54,21 @@
 	</style>
 	<center>
 		<body>
-		<div><h4>Sign Up</h4>
+		<div><h4>Daftar.</h4>
 			<hr>
 			<label for="Nama"></label>
-			<input type="text" id="Nama"name="Nama" placeholder="Nama">
+			<input type="text" id="Nama"name="Nama" size="20" max="30" pattern="[Aa-Zz]*" placeholder="Nama" required>
 			<label for="email"></label>
-			<input type="text" id="email" name="email" placeholder="e-mail">
+			<input type="text" id="email" name="email" size="20" required pattern=" [a-z0-9._%]*+@[a-z0-9.-]*+.[a-z]*{2,4}" placeholder="e-mail" required>
 			<label for="Password"></label>
-			<input type="text" id="Password"name="Password" placeholder="Password">
+			<input type="text" id="Password"name="Password" placeholder="Kata Sandi" required>
 			<label for="Password"></label>
-			<input type="text" id="Password"name="Password" placeholder="Ketik Ulang Password">
+			<input type="text" id="Password"name="Password" placeholder="Ketik Ulang Kata Sandi" required>
 			<label for="setuju"></label>
 			<h2><b>Saya setuju dengan Kebijakan Privasi dan Syarat Ketentuan</b></h2>
-			<h1>I HAVE AN ACCOUNT.<b><a href="Sign In.html">SIGN IN</a></b></h1>
+			<h1>Saya sudah punya akun.<b><a href="Sign In.html">MASUK</a></b></h1>
 			<br>
-			<a href="Halaman Awal.html"><input type="submit" value="Sign Up">
+			<a href="Halaman Awal.html"><input type="submit" value="Daftar">
 		</div>
-		
 		</body>
 	</center>

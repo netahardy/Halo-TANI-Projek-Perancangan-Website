@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
 	<title>Log_In</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,20 +7,21 @@
 	body{
 	background-image: url("pemandangan-sawah.jpg");
 	opacity: 0.9;
+  background-repeat: no-repeat;
 	}
 	h4{
 	text-align: center;
 	font-family: "Trebuchet MS";
 	color: white;
 	font-size: 25px;
-    }
-     h1{
-    text-align: center;
+  }
+  h1{
+  text-align: center;
 	font-family: "Trebuchet MS";
 	color: white;
 	font-size: 10px;
-    }
-    div{
+  }
+  div{
 	background-color: black;
 	width: 350px;
 	border: 15px;
@@ -55,13 +56,13 @@
 <body>
 <form class="form">
 	<div id="demo">
-	<h4>Masuk</h4><hr><br>
+	<h4>Masuk.</h4><hr><br>
 	<label for="uname"></label>
     <input type="text" placeholder="Nama" name="uname" required><br>
     <label for="psw"></label>
     <input type="password" placeholder="Kata Sandi" name="psw" required><br>
     <label><br>
-    <button type="submit" name="login" onclick="myFunction()"><a href="Halaman Awal.html" class="LOGIN" id="myLink" >Masuk.</a></button>
+    <button type="submit" name="login" onclick="myFunction()"><a href="Halaman Awal.html" class="LOGIN" id="myLink" >Masuk</a></button>
      <label>
       <input type="checkbox" checked="checked" name="remember">Ingatkan Saya
     </label>
@@ -74,6 +75,14 @@
       // Get the value of the input field with id="numb"
       x = document.getElementById("username").value;
       y = document.getElementById("password").value;
+    
+      // If x is Not a Number or less than one or greater than 10
+      if (x === "neta" && y === "neta123") {
+          window.location.href = "Halaman Awal.html";
+      } else {
+        text = "Username/Password Salah";
+        document.getElementById("demo").innerHTML = text;
+      }
     }
   </script>
 </div>
