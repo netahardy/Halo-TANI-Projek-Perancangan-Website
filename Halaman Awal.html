@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>Halaman Awal</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="hehe.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
+  position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; 
 }
 body {
   margin: 0;
   background-image: url("maxresdefault.jpg");
+  font-family: Trebuchet MS;
 }
 .header {
   color: white;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
   background-color: black;
   font-family: Trebuchet MS;
@@ -26,11 +28,18 @@ a{
 	color: yellow;
 }
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
+  float:left;
+  width: 33.3%;
+  padding: 25px;
   font-family: Trebuchet MS;
   color: white;
+  background-color: black;
+  background-size: 25%;
+  opacity: 0.8;
+  text-align: center;
+  border:5px;
+  background-position: center;
+
 }
 .row {
   content: "";
@@ -38,45 +47,65 @@ a{
   clear: both;
   font-family: Trebuchet MS;
   color: white;
+  table-layout: 
 }
 @media screen and (max-width:600px) {
   .column {
     width: 100%;
   }
 }
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {floast: none;}
+}
 </style>
 </head>
 <body>
-<div class="top">
-  <div class="bar black card">
-    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="Halaman Awal.html" class="bar-item button psadding-large">HOME</a>
-    <a href="diagnosa cabai.html" class="bar-item button padding-large hide-small">DIAGNOSA</a>
-    <a href="jenis penyakit.html" class="bar-item button padding-large hide-small">JENIS PENYAKIT</a>
 
-    <div class="dropdown-hover hide-small">
-      <button class="padding-large button" title="More">LAINNYA <i class="fa fa-caret-down"></i></button>     
-      <div class="dropdown-content bar-block card-4">
-        <a href="ABOUT US.html" class="bar-item button">LAYANAN</a>
-        <a href="ABOUT US.html" class="bar-item button">HUBUNGIs KAMI</a>
-      </div>
-    </div>
-  </div>
-</div>
+<ul class="topnav">
+  <li><a class="active" href="Halaman Awal.html">Home</a></li>
+  <li><a href="diagnosa jagung.html">Diagnosa</a></li>
+  <li><a href="Jenis Penyakit.html">Jenis Penyakit</a></li>
+  <li><a href="Hama.html">Hama Tanaman</a></li>
+  <li class="right"><a href="Tentang halotani.html">Tentang Kami</a></li>
+</ul>
+
 <div class="header">
   <h1>HaloTANI.</h1>
 </div>
-<div class="row">
+<br><br><br>
   <div class="column">
-    <h2><a href="diagnosa jagung.html">Diagnosa Penyakit</a></h2>
+   <h2><a href="diagnosa jagung.html">Diagnosa Penyakit</a></h2>
     <p>Diagnosa Penyakit merupakan salah satu fitur yang kami sediakan untuk membantu Petani dalam membantu merawat tanamannya, fitur ini berisi deteksi penyakit sesuai gejala.</p>
   </div>
-  
   <div class="column">
-    <h2><a href="Jenis Penyakit.html">Jenis Penyakit</a></h2>
+  <h2><a href="Jenis Penyakit.html">Jenis Penyakit</a></h2>
     <p>Jenis Penyakit merupakan salah satu fitur yang berisi mengenai informasi jenis-jenis penyakit yang umum menyerang beberapa tanaman dan cara solusi dalam mengatasinya.</p>
   </div>
-  
   <div class="column">
     <h2><a href="Hama.html">Hama Tanaman</a></h2>
     <p>Fitur Hama Tanaman berisi mengenai macam-macam hama penyakit yang sering mengganggu pada tanaman dan cara penanganan yang tepat untuk membantu menanggulanginya.</p>

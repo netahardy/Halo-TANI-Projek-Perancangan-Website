@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Diagnosa</title>
+  <title>Diagnosa-Padi</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -9,7 +9,8 @@
   <style type="text/css">
   body{
   background-image: url("pemandangan-sawah.jpg");
-  opacity: 0.8;
+  font-family: Trebuchet MS;
+  background-repeat: no-repeat;
   }
   h4{
   text-align: center;
@@ -28,6 +29,34 @@
   width: 80%; 
   font-family: "Trebuchet MS";
   }
+  ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
   input[type=text],select {
     width: 60%;
     padding: 12px 20px;
@@ -63,17 +92,24 @@
   </style>
   <center>
     <body>
-    <div><h4>Hasil Deteksi</h4>
-      <hr><hr><br><br>
+      
+<ul class="topnav">
+  <li><a href="Halaman Awal.html">Home</a></li>
+  <li><a href="diagnosa jagung.htm">Diagnosa</a></li>
+  <li><a href="Jenis Penyakit.html">Jenis Penyakit</a></li>
+  <li><a href="Hama.html">Hama Tanaman</a></li>
+  <li class="right"><a href="Tentang halotani.html">Tentang Kami</a></li>
+</ul>
+
+    <div><h4><br>Hasil Deteksi</h4>
+      <hr><br><br>
       <h1>Penyakit Busuk Batang
         <br>
 Busuk batang merupakan penyakit yang menginfeksi pada bagian tanaman bagian kanopi dan menyebabkan tanaman menjadi mudah rebah. Untuk cara mengamati penyakit ini bisa dengan membuka kanopi pertanaman terlebih dahulu. Oleh karena itu perlu diwaspadai bila terjadi rebah pada pertanaman, tanpa sebelumnya terjadi hujan dengan angin yang kencang.
 
 Gejala awal berupa bercak berwarna kehitaman serta bentuknya tidak teratur pada sisi luar pelapah daun dan secara bertahap membesar. Akhirnya cendawan menembus batang padi yang kemudian menjadi lemah, dan akhirnya anakan akan mati. Akibat akhirnya tanaman menjadi rebah.
 
-Pengendalian bisa dengan cara pengeringan petakan dan biarkan tanah hingga retak sebelum dialiri lagi. Di samping itu tunggul-tunggul padi sesudah panen harus dibakar atau didekomposisi..</h1>
-     
-     
+Pengendalian bisa dengan cara pengeringan petakan dan biarkan tanah hingga retak sebelum dialiri lagi. Di samping itu tunggul-tunggul padi sesudah panen harus dibakar atau didekomposisi.</h1><br><br>
     </div>
     
     </body>
