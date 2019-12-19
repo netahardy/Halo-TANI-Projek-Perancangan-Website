@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log_In</title>
+	<title>DAFTAR</title>
 </head>
 <link rel="stylesheet" type="text/css">
 	<style type="text/css">
@@ -54,21 +54,27 @@
 	</style>
 	<center>
 		<body>
-		<div><h4>Daftar.</h4>
+		<div><h4>DAFTAR</h4>
 			<hr>
 			<label for="Nama"></label>
 			<input type="text" id="Nama"name="Nama" size="20" max="30" pattern="[Aa-Zz]*" placeholder="Nama" required>
 			<label for="email"></label>
-			<input type="text" id="email" name="email" size="20" required pattern=" [a-z0-9._%]*+@[a-z0-9.-]*+.[a-z]*{2,4}" placeholder="e-mail" required>
+			<input type="text" id="Email" name="Email" size="20" required pattern=" [a-z0-9._%]*+@[a-z0-9.-]*+.[a-z]*{2,4}" placeholder="E-mail" required>
 			<label for="Password"></label>
 			<input type="text" id="Password"name="Password" placeholder="Kata Sandi" required>
 			<label for="Password"></label>
 			<input type="text" id="Password"name="Password" placeholder="Ketik Ulang Kata Sandi" required>
-			<label for="setuju"></label>
+			<label for="setuju"></label><br>
 			<h2><b>Saya setuju dengan Kebijakan Privasi dan Syarat Ketentuan</b></h2>
-			<h1>Saya sudah punya akun.<b><a href="Sign In.html">MASUK</a></b></h1>
+			<h1>Sudah punya akun?<b>&nbsp;<a href="Sign In.html">MASUK</a></b></h1>
 			<br>
-			<a href="Halaman Awal.html"><input type="submit" value="Daftar">
+			<a href="Halaman Awal.html"><input type="submit" value="Daftar"
+			button onclick="myFunction()"> </button>
+			<script>
+				function myFunction() {
+				alert("Data Anda otomatis tersimpan");
+			}
+		</script>
 		</div>
 		</body>
 	</center>
