@@ -1,0 +1,118 @@
+<style>
+body {
+  margin: 0;
+  font-family: Trebuchet MS;
+  background-repeat: no-repeat;
+}
+.header {
+  color: white;
+  padding: 25px;
+  text-align: center;
+  background-color: black;
+  font-family: Trebuchet MS;
+}
+div.gallery {
+  border: 3px solid #E6E6FA;
+  background-color: black;
+  font-family: Trebuchet MS;
+  background-color: white;
+}
+
+div.gallery:hover {
+  border: 3px solid #E6E6FA;
+  opacity: 0.6;
+  }
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 25px;
+  text-align: center;
+}
+ul.topnav {
+  font-family: Trebuchet MS;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+* {
+  box-sizing: border-box;
+}
+ .element {
+   position: relative;
+   bottom:1px;
+   border: 0px solid #000;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>

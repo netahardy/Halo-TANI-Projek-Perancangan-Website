@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Selamat Datang</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 <style>
-body{margin: 0;
+body{
+	margin: 0;
 	background-image: url("pemandangan-sawah.jpg");
 	background-repeat: no-repeat;
 	}
@@ -18,7 +12,6 @@ body{margin: 0;
 	padding: 50px;
 	margin: 60px; 
 	opacity: 0.8;
-	align-content: center;
 	}
 	h1{
     text-align: center;
@@ -71,14 +64,5 @@ ul.topnav li.right {float: right;}
   .responsive {
     width: 100%;
   }
-</style>
-</head>
-<body>
-<ul class="topnav">
-  <li><a href="Sign In.html">Masuk</a></li>
-</ul>
-<center><div><h1>SELAMAT DATANG</h1>
-<hr>
-<h2>Halo TANI, kami hadir untuk petani. Mari bersama membangun negeri.</h2><br>
-</div></center>
+  
 </style>
